@@ -1,0 +1,62 @@
+.countDownImage{
+    background-image: url("../../assetsForWebsite/asset_8.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    filter: brightness(70%);
+}
+.countDownContent{
+    height: 50vh;
+    left: 17vw;
+    position: absolute;
+    top: 210vh ;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-weight: 500;
+}
+.location{
+    width: 65vw;
+    font-size: 1.2vmax;
+    height: 5vh;
+    letter-spacing: 0.3vmax;
+}
+.countDown{
+    font-family: serif;
+    line-height: normal;
+    text-align: center;
+    margin-top:2%;
+    font-size: 4.5vmax;
+}
+.countDownTime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    font-size: 1.2vmax;
+}
+@media only screen and (max-width:600px){
+    .countDownImage{
+        height: 60vh;
+    }
+    .countDownContent{
+        top: 250vh;
+        left: 10vw;
+        height: 50vh;
+    }
+    .location{
+        font-size: 2vmax;
+        height: 7vh;
+        width: 85vw;
+        text-align: center;
+    }
+    .countDown{
+        font-size: 7vmax;
+    }
+    .countDownTime{
+        width: 60vw;
+        font-size: 2.5vmax;
+    }
+}

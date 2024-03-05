@@ -1,0 +1,15 @@
+.images{
+    height: 30vmax;
+    width: 30vmax;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+.cross{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    color: black;
+}

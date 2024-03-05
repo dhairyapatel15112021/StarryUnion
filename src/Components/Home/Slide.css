@@ -1,0 +1,19 @@
+.slide_images{
+    width: 100vw;
+    height: 100vh;
+    background-position: right;
+    background-size: cover;
+    filter: brightness(80%);
+}
+.slide_1{
+    background-image: url('../../assetsForWebsite/asset_5.jpeg');
+    transition: background-image 2s;
+}
+.slide_2{
+    background-image: url('../../assetsForWebsite/asset_6.jpeg');
+    transition: background-image 2s;
+}
+.slide_3{
+    background-image: url('../../assetsForWebsite/asset_7.jpeg');
+    transition: background-image 2s;
+}

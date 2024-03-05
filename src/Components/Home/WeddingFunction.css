@@ -1,0 +1,54 @@
+.heightSet{
+    height: 100%;
+    width: 22vmax;
+    background-color: #ffffff;
+}
+.setPhoto{
+    height: 22vmax;
+    width: 22vmax;
+}
+.setBorder{
+    height: 20vmax;
+    width: 20vmax;
+}
+.weddingInfoText{
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.5vmax;
+    margin: 5% 0%;
+}
+.additionalText{
+    margin: 10% 0%;
+    font-weight: 400;
+    color: #6a6a6a;
+    font-size: 0.95vmax;
+}
+.locationPhoto{
+    background-image: url("../../assetsForWebsite/asset_2.jpeg");
+}
+.weddingPhoto{
+    background-image: url("../../assetsForWebsite/asset_3.jpeg");
+}
+.receptionPhoto{
+    background-image: url("../../assetsForWebsite/asset_4.jpeg");
+}
+@media only screen and (max-width:600px){
+    .heightSet{
+        width: 95vw;
+        height: 31%;
+    }
+    .weddingInfoText{
+        font-size: 2.5vmax;
+        margin: 3%;
+    }
+    .additionalText{
+        font-size: 1.5vmax;
+        margin: 5% 3%;
+    }
+    .setPhoto{
+        width: 95vw;
+    }
+    .setBorder{
+        width: 91vw;
+    }
+}

@@ -1,0 +1,36 @@
+.thankYouImage{
+    background-image: url("../../assetsForWebsite/asset_9.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    filter: brightness(70%);
+}
+.thankYouContent{
+    height: 35vh;
+    /* width: 30vw; */
+    left: 45vw;
+    position: absolute;
+    top: 395vh ;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-weight: 500;
+}
+.coupleName{
+    text-align: center;
+    font-size: 1.5vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Arvo', serif;
+}
+@media only screen and (max-width:600px){
+    .thankYouContent{
+        top: 480vh;
+        left: 30vw;
+    }
+    .coupleName{
+        font-size: 2.5vmax;
+        letter-spacing: 0.2vmax;
+    }
+}

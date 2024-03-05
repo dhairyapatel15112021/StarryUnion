@@ -1,0 +1,145 @@
+.photos{
+    margin-top: calc(17vh);
+    width: 100vw;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery{
+    font-size: 2.5vmax;
+    margin-top: 5%;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.2vmax;
+}
+.heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmax;
+    margin-bottom: 2%;
+    color: #aaa0a0;
+}
+.loveHeart2{
+    background-image: url("../../assetsForWebsite/4.svg");
+    background-size: cover;
+    background-position: center;
+    height: 4vmax;
+    width: 4vmax;
+}
+.text{
+    width: 50vw;
+    text-align: center;
+    color: #6a6a6a;
+    font-family: 'Arvo', serif;
+    margin-bottom: 5%;
+}
+.galleryPhotos{
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(3 , 1fr);
+    width: 70vw;
+    column-gap: 0.5vw;
+    row-gap: 4vh;
+    margin-bottom: 8%;
+}
+.individualPhotosDiv{
+    height: 20vmax;
+    width: 20vmax;
+    position: relative;
+    overflow: hidden;
+}
+.individualPhotos{
+    height: 20vmax;
+    width: 20vmax;
+    transition: transform 0.8s;
+}
+.individualPhotosIcon{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 1.5vmax;
+    height:3.5vmax;
+    width: 3.5vmax;
+    border-radius: 3.5vmax;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.individualPhotosDiv .individualPhotosIcon{
+    display: none;
+}
+.individualPhotosDiv:hover .individualPhotosIcon{
+    display: flex;
+}
+.individualPhotosDiv:hover .individualPhotos{
+    transform: scale(1.15);
+}
+.individualPhotos:hover{
+    filter: brightness(70%);
+}
+.individualPhotosIcon:hover     {
+    color: white;
+    background-color:#f0394d;
+}
+.footer{
+    background-image: url("../../assetsForWebsite/Gallery/footer.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    height: 50vh;
+    width: 100vw;
+}
+.footerContent{
+    position: absolute;
+    top: calc(17vh + 11vmax + 20vmax * 3 + 8vh + 20% + 30vh);
+    color: white;
+}
+.heart2{
+    color: white;
+}
+.coupleText2{
+    font-size: 2vmax;
+    letter-spacing: 0.1vmax;
+    font-family: 'Arvo', serif;
+}
+@media only screen and (max-width:600px){
+    .galleryPhotos{
+        width: 100vw;
+        grid-template-rows: repeat(9 , 1fr);
+        grid-template-columns: repeat(1 , 1fr);
+        column-gap: 0;
+        row-gap: 0;
+    }
+    .individualPhotos{
+        margin: calc((100vw - 45vmax)/2);
+        height: 45vmax;
+        width: 45vmax;
+    }
+    .text{
+        width: 95vw;
+    }
+    .gallery{
+        font-size: 4vmax;
+    }
+    .footer{
+        height: 40vh;
+    }
+    .footerContent{
+        top: calc(17vh + 11vmax + 45vmax * 9 + 18 * calc((100vw - 45vmax)/2) + 20% + 20vh);
+    }
+    .coupleText2{
+        font-size: 3vmax;
+        letter-spacing: 0.2vmax;
+    }
+    .heart{
+        font-size: 3vmax;
+    }
+    .loveHeart2{
+        height: 6vmax;
+        width: 6vmax;
+    }
+}

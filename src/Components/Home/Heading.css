@@ -1,0 +1,84 @@
+.date{
+    position: absolute;
+    top: 27vh;
+    left: 33vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.saveTheDate{
+   font-family: 'Pacifico', cursive;
+   font-size: 4vmax;
+   transform: rotate(-15deg);
+   line-height: 6vmax;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-23px;
+}
+.dot{
+    height: 0.5vmax;
+    width: 0.5vmax;
+    background-color: #f0394d;
+    border: none;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+.married{
+    margin-top: 8%;
+    height: fit-content;
+    width: 40vmax;
+    font-family: 'Arvo', serif;
+    font-size: 1.5vmax;
+    letter-spacing: 0.3vmax;
+    border-top: 3px double white;
+    border-bottom: 3px double white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmax;
+    margin-bottom: 2%;
+}
+.loveHeart{
+    background-image: url("../../assetsForWebsite/3.svg");
+    background-size: cover;
+    background-position: center;
+    height: 4vmax;
+    width: 4vmax;
+}
+@media only screen and (max-width:600px){
+    .date{
+        left: 10vw;
+    }
+    .saveTheDate{
+        font-size: 6vmax;
+        line-height: 9vmax;
+        transform: rotate(-10deg);
+    }
+    .time{
+        margin-top:-15px;
+    }
+    .dot{
+        height: 0.8vmax;
+        width: 0.8vmax;
+    }
+    .married{
+        margin-top: 10%;
+    }
+    .heart{
+        font-size: 3vmax;
+    }
+    .loveHeart{
+        height: 7vmax;
+        width: 7vmax;
+    }
+}

@@ -1,0 +1,145 @@
+.personal{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f6f6f6;
+}
+.personalItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #6a6a6a;
+    height: 80vh;
+    width: 80vw;
+    transform: translate(10vw,8vh);
+    text-align: center;
+}
+.loveHeart2{
+    background-image: url("../../assetsForWebsite/4.svg");
+    background-size: cover;
+    background-position: center;
+    height: 4vmax;
+    width: 4vmax;
+}
+.coupleText{
+    font-family: 'Arvo', serif;
+    font-size: 2.5vmax;
+    font-weight: 500;
+    margin: 2%;
+    letter-spacing: 0.1vmax;
+    color: #000000;
+}
+.couplePara{
+    font-family: 'Arvo', serif;
+    margin-bottom: 2%;
+    font-size: 1vmax;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.men , .women{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.photo{
+    background-size: cover;
+    background-position: center;
+    height: 28vmax;
+    width: 28vmax;
+    margin-bottom: 3%;
+}
+.menPhoto{
+    background-image: url("../../assetsForWebsite/asset_0.jpeg");
+}
+.womenPhoto{
+    background-image: url("../../assetsForWebsite/asset_1.jpeg");
+}
+.border{
+    position: relative;
+    height: 26vmax;
+    width: 26vmax;
+    border: 1px solid #ffffff;
+    top: 1vmax;
+    left: 1vmax;
+}
+.boldText{
+    font-weight: bold;
+}
+.para{
+    text-align: left;
+    width: 70%;
+    font-weight: 300;
+    font-size: 1.1vmax;
+}
+.loveHeart3{
+    position: absolute;
+    top: 65%;
+    left: 43%;
+    background-image: url("../../assetsForWebsite/3.svg");
+    background-size: cover;
+    background-position: center;
+    height: 4vmax;
+    width: 4vmax;
+}
+.brideAndGroom{
+    position: absolute;
+    top: 85%;
+    left: 26%;
+    border-top: 5px double #ffffff;
+    border-bottom: 5px double #ffffff;
+    font-size: 1vmax;
+    width: 50%;
+    height: 7%;
+    color: #f6f6f6;
+    letter-spacing: 0.2vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width:600px){ 
+    .personal{
+        height: 150vh;
+    }
+    .personalItems{
+        transform: translate(0,0);
+        width: 100vw;
+        height: 150vh;
+    }
+    .coupleText{
+        font-size: 4vmax;
+    }
+    .couplePara{
+        font-size: 1.5vmax;
+    }
+   
+    .intro{
+        flex-direction: column;
+        height: 117vh;
+    }
+    .photo{
+        width: 95vw;
+        height: 45vmax;
+    }
+    .border{
+        width: 91vw;
+        height: 43vh;
+    }
+    .para{
+        width: 95vw;
+        font-size: 1.5vmax;
+    }
+    .loveHeart3{
+        top: 70%;
+        height: 5vmax;
+        width: 5vmax;
+    }
+    .brideAndGroom{
+        font-size: 1.3vmax;
+    }
+}
