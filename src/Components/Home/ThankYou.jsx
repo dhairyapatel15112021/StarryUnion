@@ -15,7 +15,7 @@ export const ThankYou = () => {
           -
       </div>
       <div className='coupleName' data-aos="fade-up" data-aos-duration="800">
-        DHARA & MEET
+      GERRARD & DIANNE
       </div>
     </div>
     </>
