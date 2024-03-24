@@ -7,7 +7,6 @@
 }
 .thankYouContent{
     height: 35vh;
-    /* width: 30vw; */
     left: 45vw;
     position: absolute;
     top: 395vh ;
@@ -27,7 +26,7 @@
 @media only screen and (max-width:600px){
     .thankYouContent{
         top: 480vh;
-        left: 30vw;
+        left: 23%;
     }
     .coupleName{
         font-size: 2.5vmax;

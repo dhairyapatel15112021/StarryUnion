@@ -25,3 +25,13 @@
     border: 1px solid black;
     color: black;
 }
+@media only screen and (max-width:600px){
+    .images{
+        left: 5vw;
+        width: 90vw;
+    }
+    .cancle_Photo{
+        left: 90vw;
+        top: 24vh;
+    }
+}

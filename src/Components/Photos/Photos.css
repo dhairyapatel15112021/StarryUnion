@@ -1,5 +1,5 @@
 .photos{
-    margin-top: calc(17vh);
+    margin-top: 17vh;
     width: 100vw;
     background-color: #f6f6f6;
     display: flex;
@@ -115,9 +115,13 @@
         column-gap: 0;
         row-gap: 0;
     }
-    .individualPhotos{
-        margin: calc((100vw - 45vmax)/2);
+    .individualPhotosDiv{
+        margin-left: calc((100vw - 45vmax)/2);
         height: 45vmax;
+        width: 45vmax;
+    }
+    .individualPhotos{
+        height: 43vmax;
         width: 45vmax;
     }
     .text{
@@ -130,7 +134,8 @@
         height: 40vh;
     }
     .footerContent{
-        top: calc(17vh + 11vmax + 45vmax * 9 + 18 * calc((100vw - 45vmax)/2) + 20% + 20vh);
+        top: calc(17vh + 11vmax + 45vmax * 9 + 35%);
+        z-index: 1;
     }
     .coupleText2{
         font-size: 3vmax;

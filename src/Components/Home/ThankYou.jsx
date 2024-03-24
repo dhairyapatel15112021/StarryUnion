@@ -3,7 +3,8 @@ import './ThankYou.css'
 export const ThankYou = () => {
   return (
     <>
-    <div className='thankYouImage'></div>
+    <div className='thankYouImage'>
+    </div>
     <div className='thankYouContent'>
       <div className='saveTheDate countDown' data-aos="fade-up" data-aos-duration="800">
         <div>Thank</div>
