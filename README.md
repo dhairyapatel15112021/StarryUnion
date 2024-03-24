@@ -1,3 +1,7 @@
+# StarryUnion
+
+Welcome to StarryUnion, the unique wedding invitation website that celebrates love and togetherness. Discover detailed information about your special day, including the wedding, venue details, and the enchanting love story of the bride and groom. With captivating pre-wedding photos, StarryUnion sets a new standard for elegant and memorable invitations, taking your wedding experience to celestial heights.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
