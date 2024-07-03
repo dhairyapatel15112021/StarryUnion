@@ -1,7 +1,9 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import './Photos.css';
 import { data } from './Data.js';
 import { PhotoModal } from './PhotoModal.jsx';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export const photoContext = createContext();
 export const Photos = () => {
   const [photoModal, setphotoModal] = useState(false);
@@ -10,6 +12,9 @@ export const Photos = () => {
     setphotoImage(photo)
     setphotoModal(true);
   }
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className='photos'>
       <div className='gallery background' data-aos="fade-up" data-aos-duration="800">GALLERY</div>
@@ -25,7 +30,7 @@ export const Photos = () => {
         {
           data.map((item, index) => {
             return (
-              <div data-aos="fade-zoom-in" data-aos-duration="500" className='individualPhotosDiv background'>
+              <div data-aos="fade-zoom-in" data-aos-duration="500" className='individualPhotosDiv background' key={index}>
                 <img src={item} alt='gallery photos' key={index} className='individualPhotos'></img>
                 <div onClick={() => showModal(item)}><i className="fa-solid fa-magnifying-glass-plus individualPhotosIcon"></i></div>
               </div>
@@ -34,9 +39,9 @@ export const Photos = () => {
         }
         {
           photoModal &&
-            <photoContext.Provider value={{photoImage,setphotoModal}}>
-              <PhotoModal/>
-            </photoContext.Provider>
+          <photoContext.Provider value={{ photoImage, setphotoModal }}>
+            <PhotoModal />
+          </photoContext.Provider>
         }
       </div>
       <div className='footer background'></div>
@@ -47,7 +52,7 @@ export const Photos = () => {
           -
         </div>
         <div className='coupleText2' data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-        GERRARD & DIANNE
+          GERRARD & DIANNE
         </div>
       </div>
     </div>
